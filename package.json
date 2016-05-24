@@ -1,0 +1,40 @@
+{
+  "name": "reverse-geocode",
+  "version": "0.0.1",
+  "description": "get reverse-geocoded data for latitude and longitude values ",
+  "main": "lib/reverse-geocode.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikramTiwari/reverse-geocode.git"
+  },
+  "keywords": [
+    "reverse",
+    "geocode",
+    "geocode",
+    "lat",
+    "long",
+    "long",
+    "lat",
+    "lon",
+    "lat",
+    "lon",
+    "latitude",
+    "longitude",
+    "reverse",
+    "lat",
+    "long"
+  ],
+  "author": "Vikram Tiwari <vikramtheone1@gmail.com> (http://vikramtiwari.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VikramTiwari/reverse-geocode/issues"
+  },
+  "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
+  "devDependencies": {
+    "assert": "^1.4.0",
+    "mocha": "^2.5.1"
+  }
+}
