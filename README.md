@@ -6,6 +6,7 @@ get reverse-geocoded data for latitude and longitude values
 
 ## Features
 
+- Zero dependencies
 - Quick city level lookups
 - Only US dataset as of now, more coming soon.
 

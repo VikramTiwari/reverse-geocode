@@ -1,6 +1,6 @@
 {
   "name": "reverse-geocode",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "get reverse-geocoded data for latitude and longitude values ",
   "main": "lib/reverse-geocode.js",
   "scripts": {
