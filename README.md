@@ -30,7 +30,8 @@ console.log(reverse.lookup(37.8072792, -122.4780652));
   latitude: '37.799840',
   longitude: '-122.46167',
   city: 'San Francisco',
-  state: 'California' }
+  state: 'California',
+  distance: 1.6610566475026183 }
  */
 ```
 

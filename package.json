@@ -1,6 +1,6 @@
 {
   "name": "reverse-geocode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get reverse-geocoded data for latitude and longitude values ",
   "main": "lib/reverse-geocode.js",
   "scripts": {
@@ -35,6 +35,6 @@
   "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
   "devDependencies": {
     "assert": "^1.4.0",
-    "mocha": "^2.5.1"
+    "mocha": "^2.5.3"
   }
 }
