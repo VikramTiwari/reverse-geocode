@@ -6,9 +6,10 @@ get reverse-geocoded data for latitude and longitude values
 
 ## Features
 
-- Zero dependencies
-- Quick city level lookups
-- Only US dataset as of now, more coming soon.
+- Minimal dependencies
+- Quick lookups
+- Multiple API methods
+- US dataset as of now, more coming soon
 
 ## How to use
 
@@ -18,11 +19,11 @@ get reverse-geocoded data for latitude and longitude values
 npm install --save reverse-geocode
 ```
 
-- Use package to get geo data from lat-long values
+- Use package to get geo data
 
 ```javascript
 let reverse = require('reverse-geocode');
-console.log(reverse.lookup(37.8072792, -122.4780652));
+console.log(reverse.geo(37.8072792, -122.4780652));
 
 /*
 { zipcode: '94129',
@@ -35,7 +36,16 @@ console.log(reverse.lookup(37.8072792, -122.4780652));
  */
 ```
 
-### Credits
+### API Methods
+
+- [gps]()
+- [zip]()
+- [city]()
+- [state]()
+- [zips]()
+- [cities]()
+
+#### Credits
 
 - Haversine originally by Nick Justice (niix) at <https://github.com/niix/haversine>
 - Inspired from cities by Steven Lu (sjlu) at <https://www.npmjs.com/package/cities>
