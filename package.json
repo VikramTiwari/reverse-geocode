@@ -35,6 +35,6 @@
   "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
   "devDependencies": {
     "assert": "^1.4.0",
-    "mocha": "^2.5.3"
+    "mocha": "^3.0.0"
   }
 }
