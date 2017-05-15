@@ -1,5 +1,7 @@
 # reverse-geocode
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/VikramTiwari/reverse-geocode.svg)](https://greenkeeper.io/)
+
 get reverse-geocoded data for latitude and longitude values
 
 [![Build Status](https://travis-ci.org/VikramTiwari/reverse-geocode.svg?branch=master)](https://travis-ci.org/VikramTiwari/reverse-geocode) [![NPM Version](https://img.shields.io/npm/v/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode) [![NPM Download](https://img.shields.io/npm/dm/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode)
