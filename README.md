@@ -8,7 +8,7 @@ get reverse-geocoded data for latitude and longitude values
 
 - Zero dependencies
 - Quick city level lookups
-- Only US dataset as of now, more coming soon.
+- Only US and Canada dataset as of now, more coming soon.
 
 ## How to use
 
@@ -33,6 +33,24 @@ console.log(reverse.lookup(37.8072792, -122.4780652));
   state: 'California',
   distance: 1.6610566475026183 }
  */
+```
+
+- Split search by country
+
+```
+console.log(reverse.lookup(50.447444, -104.418513, reverse.COUNTRIES.CANADA));  /* or 'US' or 'CA' */
+
+/*
+{ country: 'CA',
+  zipcode: 'S4Z',
+  region: 'Regina Northeast',
+  state: 'Saskatchewan',
+  state_abbr: 'SK',
+  city: 'Regina',
+  latitude: 50.4497,
+  longitude: -104.5323,
+  distance: 8.06066680024397 }
+*/	
 ```
 
 ### Credits
