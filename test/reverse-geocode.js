@@ -6,7 +6,6 @@ let assert = require('assert'),
 describe('lookup()', function() {
   describe('Canada', function() {
     let ca = reverse.lookup(50.2343, -110.3438, reverse.COUNTRIES.CANADA);
-    console.log(reverse.lookup(50.447444, -104.418513, reverse.COUNTRIES.CANADA));
 
     it('postalCode', function() {
       assert.equal('T1A', ca.zipcode);
