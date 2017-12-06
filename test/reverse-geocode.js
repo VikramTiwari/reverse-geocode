@@ -5,7 +5,7 @@ let assert = require('assert'),
 
 describe('lookup()', function() {
   describe('USA', function() {
-    let usa = reverse.lookup(37.8072792, -122.4780652, 'us');
+    let usa = reverse.lookup(37.8072792, -122.4780652, 'US');
     it('zipcode', function() {
       assert.equal(94129, usa.zipcode);
     });
@@ -30,7 +30,7 @@ describe('lookup()', function() {
   });
 
   describe('Canada', function() {
-    let ca = reverse.lookup(50.2343, -110.3438, 'ca');
+    let ca = reverse.lookup(50.2343, -110.3438, 'CA');
 
     it('postalCode', function() {
       assert.equal('T1A', ca.zipcode);
@@ -56,7 +56,7 @@ describe('lookup()', function() {
   });
 
   describe('Australia', function() {
-    let au = reverse.lookup(-34.988328, 138.515406, 'au');
+    let au = reverse.lookup(-34.988328, 138.515406, 'AU');
 
     it('zipcode', function() {
       assert.equal(5045, au.zipcode);
