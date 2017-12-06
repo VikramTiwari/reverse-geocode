@@ -2,8 +2,8 @@
   {
     "zipcode": "T0A",
     "state_abbr": "AB",
-    "latitude": "54.766",
-    "longitude": "-111.7174",
+    "latitude": 54.766,
+    "longitude": -111.7174,
     "region": "St. Paul",
     "state": "Alberta"
   },

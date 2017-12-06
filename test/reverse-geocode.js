@@ -55,9 +55,37 @@ describe('lookup()', function() {
     });
   });
 
+  describe('Dynamic file(s)', function() {
+    describe('Australia', function() {
+      let au = reverse.lookup(-34.988328, 138.515406, 'au');
+
+      it('zipcode', function() {
+        assert.equal(5045, au.zipcode);
+      });
+      it('state_abbr', function() {
+        assert.equal('SA', au.state_abbr);
+      });
+      it('latitude', function() {
+        assert.equal('-34.9833', au.latitude);
+      });
+      it('longitude', function() {
+        assert.equal(138.5167, au.longitude);
+      });
+      it('city', function() {
+        assert.equal('Glenelg Jetty Road', au.city);
+      });
+      it('state', function() {
+        assert.equal('South Australia', au.state);
+      });
+      it('distance', function() {
+        assert.equal(0.5713811323631017, au.distance);
+      });
+    });
+  });
+
   describe('Unhandled', function() {
-    it('Australia', function() {
-      assert.equal(undefined, reverse.lookup(50.3493, 49.29349, 'AU'));
+    it('Russia', function() {
+      assert.equal(undefined, reverse.lookup(56.029037, 92.880102, 'RU'));
     });
   });
 });
