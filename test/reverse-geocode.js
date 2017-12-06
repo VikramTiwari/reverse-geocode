@@ -82,7 +82,7 @@ describe('lookup()', function() {
   });
 
   describe('Unhandled', function() {
-    it('Russia', function() {
+    it('Doesn\'t Exist', function() {
       assert.equal(undefined, reverse.lookup(56.029037, 92.880102, 'RU'));
     });
   });
