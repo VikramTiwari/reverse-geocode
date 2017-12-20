@@ -18,11 +18,11 @@ get reverse-geocoded data for latitude and longitude values
 npm install --save reverse-geocode
 ```
 
-- Use package to get geo data from lat-long values
+- Use package to get geo data from lat-long values. Specify a country code, which should match `/locations/{countryCode}.json`. USA, Australia, and Canada are provided.
 
 ```javascript
 let reverse = require('reverse-geocode');
-console.log(reverse.lookup(37.8072792, -122.4780652));
+console.log(reverse.lookup(37.8072792, -122.4780652, 'us'));
 
 /*
 { zipcode: '94129',
@@ -35,11 +35,10 @@ console.log(reverse.lookup(37.8072792, -122.4780652));
  */
 ```
 
-- Split search by country
 
-```
-console.log(reverse.lookup(50.447444, -104.418513, reverse.COUNTRIES.CANADA));  /* or 'US' or 'CA' */
-
+```javascript
+let reverse = require('reverse-geocode');
+console.log(reverse.lookup(50.447444, -104.418513, 'ca'));
 /*
 { country: 'CA',
   zipcode: 'S4Z',
@@ -52,6 +51,24 @@ console.log(reverse.lookup(50.447444, -104.418513, reverse.COUNTRIES.CANADA));  
   distance: 8.06066680024397 }
 */	
 ```
+
+### Data Format
+The contents of a location data file is a simple JSON array, of location data:
+
+```javascript
+[{
+	"zipcode":"59221",
+	"state_abbr":"MT",
+	"latitude":"47.900376",
+	"longitude":"-104.13403",
+	"city":"Fairview",
+	"state":"Montana"
+}]
+```
+
+Find country postalcode data from a provider of your choice, format as above, and save into `/locations/` as `{countryCode}.JSON`. Then, specify the same country code.
+
+For a good time, save all data to `all.json` and specify `'all'` to the `reverse.lookup` method.
 
 ### Credits
 
