@@ -16,6 +16,8 @@ get reverse-geocoded data for latitude and longitude values
 
 ```bash
 npm install --save reverse-geocode
+or
+yarn add reverse-geocode
 ```
 
 - Use package to get geo data from lat-long values. Specify a country code, which should match `/locations/{countryCode}.json`. USA, Australia, and Canada are provided.
