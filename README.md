@@ -8,7 +8,7 @@ get reverse-geocoded data for latitude and longitude values
 
 - Zero dependencies
 - Quick city level lookups
-- Only US and Canada dataset as of now, more coming soon.
+- Only US, Canada and Australia dataset as of now, more coming soon.
 
 ## How to use
 
@@ -23,7 +23,7 @@ yarn add reverse-geocode
 - Use package to get geo data from lat-long values. Specify a country code, which should match `/locations/{countryCode}.json`. USA, Australia, and Canada are provided.
 
 ```javascript
-let reverse = require('reverse-geocode')
+const reverse = require('reverse-geocode')
 console.log(reverse.lookup(37.8072792, -122.4780652, 'us'))
 
 /*
@@ -38,7 +38,7 @@ console.log(reverse.lookup(37.8072792, -122.4780652, 'us'))
 ```
 
 ```javascript
-let reverse = require('reverse-geocode')
+const reverse = require('reverse-geocode')
 console.log(reverse.lookup(50.447444, -104.418513, 'ca'))
 /*
 { country: 'CA',
