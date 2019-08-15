@@ -15,21 +15,15 @@
     "node": ">=10"
   },
   "keywords": [
+    "reverse-geocode",
+    "lat-long",
     "reverse",
     "geocode",
-    "geocode",
     "lat",
     "long",
-    "long",
-    "lat",
-    "lon",
-    "lat",
     "lon",
     "latitude",
-    "longitude",
-    "reverse",
-    "lat",
-    "long"
+    "longitude"
   ],
   "standard": {
     "globals": [
