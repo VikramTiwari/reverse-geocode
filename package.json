@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/VikramTiwari/reverse-geocode.git"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "keywords": [
     "reverse",
     "geocode",
