@@ -1,7 +1,7 @@
 // Type definitions for reverse-geocode
 // Definitions by: Peter Kazazes <https://peterk.co>
 
-export function lookup(
+export default function lookup(
   latitude: number,
   longitude: number,
   countryCode: string
