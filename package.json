@@ -40,6 +40,6 @@
   "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
   "devDependencies": {
     "jest": "^24.8.0",
-    "standard": "^13.1.0"
+    "standard": "^14.0.0"
   }
 }
