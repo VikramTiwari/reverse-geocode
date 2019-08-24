@@ -3,6 +3,7 @@
   "version": "1.3.1",
   "description": "get reverse-geocoded location data for latitude and longitude values",
   "main": "lib/reverse-geocode.js",
+  "types": "lib/reverse-geocode.d.ts",
   "scripts": {
     "fix": "standard --fix",
     "test": "jest"
