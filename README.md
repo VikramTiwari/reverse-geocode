@@ -2,7 +2,7 @@
 
 get reverse-geocoded data for latitude and longitude values
 
-[![Build Status](https://travis-ci.org/VikramTiwari/reverse-geocode.svg?branch=master)](https://travis-ci.org/VikramTiwari/reverse-geocode) [![NPM Version](https://img.shields.io/npm/v/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode) [![NPM Download](https://img.shields.io/npm/dm/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode)
+![Build Status](https://github.com/VikramTiwari/reverse-geocode/workflows/Build%20Status/badge.svg) [![NPM Version](https://img.shields.io/npm/v/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode) [![NPM Download](https://img.shields.io/npm/dm/reverse-geocode.svg)](https://www.npmjs.com/package/reverse-geocode)
 
 ## Features
 
@@ -53,6 +53,8 @@ console.log(reverse.lookup(50.447444, -104.418513, 'ca'))
 */
 ```
 
+More sample outputs are in [test snapshots](__tests__/__snapshots__/reverse-geocode.test.js.snap).
+
 ### Data Format
 
 The contents of a location data file is a simple JSON array, of location data:
@@ -65,8 +67,8 @@ The contents of a location data file is a simple JSON array, of location data:
     latitude: '47.900376',
     longitude: '-104.13403',
     city: 'Fairview',
-    state: 'Montana'
-  }
+    state: 'Montana',
+  },
 ]
 ```
 
