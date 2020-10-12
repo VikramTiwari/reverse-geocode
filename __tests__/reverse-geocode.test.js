@@ -25,6 +25,9 @@ describe('lookup()', () => {
     test('distance', () => {
       expect(usa.distance).toBe(1.6610566475026183)
     })
+    test(`snapshot`, () => {
+      expect(usa).toMatchSnapshot()
+    })
   })
 
   describe('Canada', () => {
@@ -51,6 +54,9 @@ describe('lookup()', () => {
     test('distance', () => {
       expect(canada.distance).toBe(23.844762255637427)
     })
+    test(`snapshot`, () => {
+      expect(canada).toMatchSnapshot()
+    })
   })
 
   describe('Australia', () => {
@@ -76,6 +82,9 @@ describe('lookup()', () => {
     })
     test('distance', () => {
       expect(au.distance).toBe(0.5713811323631017)
+    })
+    test(`snapshot`, () => {
+      expect(au).toMatchSnapshot()
     })
   })
 

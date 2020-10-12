@@ -5,7 +5,7 @@
   "main": "lib/reverse-geocode.js",
   "types": "lib/reverse-geocode.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest --collectCoverage"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,6 @@
   },
   "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.5.0"
   }
 }

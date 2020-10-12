@@ -53,6 +53,8 @@ console.log(reverse.lookup(50.447444, -104.418513, 'ca'))
 */
 ```
 
+More sample outputs are in [test snapshots](__tests__/__snapshots__/reverse-geocode.test.js.snap).
+
 ### Data Format
 
 The contents of a location data file is a simple JSON array, of location data:
@@ -65,8 +67,8 @@ The contents of a location data file is a simple JSON array, of location data:
     latitude: '47.900376',
     longitude: '-104.13403',
     city: 'Fairview',
-    state: 'Montana'
-  }
+    state: 'Montana',
+  },
 ]
 ```
 

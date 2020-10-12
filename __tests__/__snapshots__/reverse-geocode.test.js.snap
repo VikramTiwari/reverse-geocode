@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lookup() Australia snapshot 1`] = `
+Object {
+  "city": "Glenelg Jetty Road",
+  "country": "AU",
+  "distance": 0.5713811323631017,
+  "latitude": -34.9833,
+  "longitude": 138.5167,
+  "region": "",
+  "state": "South Australia",
+  "state_abbr": "SA",
+  "zipcode": 5045,
+}
+`;
+
+exports[`lookup() Canada snapshot 1`] = `
+Object {
+  "city": "Medicine Hat",
+  "country": "CA",
+  "distance": 23.844762255637427,
+  "latitude": 50.0816,
+  "longitude": -110.5788,
+  "region": "Medicine Hat Central",
+  "state": "Alberta",
+  "state_abbr": "AB",
+  "zipcode": "T1A",
+}
+`;
+
+exports[`lookup() USA snapshot 1`] = `
+Object {
+  "city": "San Francisco",
+  "distance": 1.6610566475026183,
+  "latitude": "37.799840",
+  "longitude": "-122.46167",
+  "state": "California",
+  "state_abbr": "CA",
+  "zipcode": "94129",
+}
+`;
