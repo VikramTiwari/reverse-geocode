@@ -8,7 +8,7 @@ get reverse-geocoded data for latitude and longitude values
 
 - Zero dependencies
 - Quick city level lookups
-- Only US, Canada and Australia dataset as of now, more coming soon.
+- Only US, Canada, Australia and Italy dataset as of now, more coming soon.
 
 ## How to use
 
