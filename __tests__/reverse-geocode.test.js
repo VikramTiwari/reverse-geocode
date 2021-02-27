@@ -1,4 +1,4 @@
-const reverse = require('../lib/reverse-geocode')
+const reverse = require('../dist/reverse-geocode')
 
 // NOTE: datatypes are dependent on the files. Test just reflect what's in the file
 describe('lookup()', () => {

@@ -1,26 +1,34 @@
 // inspired from package haversine originally By Nick Justice (niix) at https://github.com/niix/haversine
+enum unit {
+  mile = `mile`,
+  km = `km`,
+}
 
 /**
  * converts a number to radian value
- * @param {number} num a number
+ * @param num number to be converted
  */
-function toRadian (num) {
+function toRadian(num: number) {
   return (num * Math.PI) / 180
 }
 
 /**
- * finds the distance between two lat-long values
- * @param {object} start start lat-long
- * @param {object} end end lat-long
- * @param {object} options any options
+ * get distance between two lat-long values
+ * @param start start lat-long object
+ * @param end end lat-long object
+ * @param options any options for distance calculation
  */
-function distance (start, end, options = {}) {
+export function getDistance(
+  start: { latitude: number; longitude: number },
+  end: { latitude: number; longitude: number },
+  options?: { threshold: number; unit: unit },
+) {
   // init constants
   const km = 6371
   const mile = 3960
 
   // convert everything to radians
-  const R = options.unit === 'mile' ? mile : km
+  const R = options && options.unit === 'mile' ? mile : km
   const dLat = toRadian(end.latitude - start.latitude)
   const dLon = toRadian(end.longitude - start.longitude)
   const lat1 = toRadian(start.latitude)
@@ -31,9 +39,8 @@ function distance (start, end, options = {}) {
     Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2)
   const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 
-  let distanceValue = 0
-
-  if (options.threshold) {
+  let distanceValue
+  if (options && options.threshold) {
     distanceValue = options.threshold > R * c
   } else {
     distanceValue = R * c
@@ -41,5 +48,3 @@ function distance (start, end, options = {}) {
 
   return distanceValue
 }
-
-module.exports.distance = distance

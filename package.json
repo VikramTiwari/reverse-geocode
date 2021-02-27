@@ -1,11 +1,13 @@
 {
   "name": "reverse-geocode",
-  "version": "1.3.3",
+  "version": "2.0.0",
   "description": "get reverse-geocoded location data for latitude and longitude values",
-  "main": "lib/reverse-geocode.js",
-  "types": "lib/reverse-geocode.d.ts",
+  "main": "dist/reverse-geocode.js",
   "scripts": {
-    "test": "jest --collectCoverage"
+    "build": "tsc",
+    "test": "jest --collectCoverage",
+    "pretest": "npm run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,7 @@
   },
   "homepage": "https://github.com/VikramTiwari/reverse-geocode#readme",
   "devDependencies": {
-    "jest": "^26.5.0"
+    "jest": "^26.5.0",
+    "typescript": "^4.2.2"
   }
 }
